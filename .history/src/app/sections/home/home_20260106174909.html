@@ -1,0 +1,84 @@
+<!-- HEADER -->
+<header
+  class="fixed top-0 left-0 w-full z-20 bg-transparent py-6 px-16 flex items-center justify-between text-white"
+>
+  <!-- Left: Name -->
+  <h1 class="text-xl font-bold tracking-wide">Ntokozо Gift Msibi</h1>
+
+  <!-- Right: Navigation -->
+  <nav class="flex items-center gap-10 text-lg">
+    <a routerLink="/" class="border-b-2 border-white pb-1">Home</a>
+    <a routerLink="/about" class="hover:text-red-500">About</a>
+    <a routerLink="/projects" class="hover:text-red-500">Projects</a>
+    <a routerLink="/contacts" class="hover:text-red-500">Contacts</a>
+
+    <button
+      class="bg-gray-900 px-6 py-2 rounded text-white font-semibold border border-gray-600 hover:bg-black"
+    >
+      Let’s Talk
+    </button>
+  </nav>
+</header>
+
+<!-- MAIN HERO SECTION -->
+<section class="min-h-screen flex items-center relative pt-28">
+  <!-- Split Background -->
+  <div class="absolute inset-0 grid grid-cols-2">
+    <div class="bg-[#121212]"></div>
+    <div class="bg-[#4A1A1A]"></div>
+  </div>
+
+  <!-- Foreground -->
+  <div class="relative z-10 w-full flex px-16 items-center">
+    <!-- LEFT TEXT -->
+    <div class="flex-1">
+      <h1 class="text-7xl font-extrabold">Hello<span class="text-red-600">.</span></h1>
+
+      <p class="text-3xl mt-6 font-semibold">I’m Ntokozo</p>
+
+      <p class="mt-8 inline-block border-2 border-red-600 px-8 py-4 text-2xl font-bold">
+        Full Stack Developer
+      </p>
+
+      <div class="flex gap-6 mt-10">
+        <button class="bg-red-700 hover:bg-red-800 px-8 py-3 rounded text-lg font-semibold">
+          My Resume
+        </button>
+
+        <button
+          class="border-2 border-red-600 px-8 py-3 rounded text-lg font-semibold hover:bg-red-600 transition"
+        >
+          My Experience
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="flex-1 flex justify-center">
+      <div class="relative">
+        <!-- Outer dark circle -->
+        <div class="absolute inset-0 rounded-full border-[6px] border-[#2A0F0F] scale-110"></div>
+
+        <!-- Main red circle -->
+        <div class="rounded-full border-[6px] border-red-700 p-4">
+          <img src="assets/profile.png" class="rounded-full w-96 h-96 object-cover" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY BAR -->
+<div class="w-full bg-[#1A1A1A] text-gray-400 py-4 text-center text-lg flex gap-8 justify-center">
+  <span>HTML</span>
+  <span>CSS</span>
+  <span>JSX</span>
+  <span>Tailwind</span>
+  <span>Typescript</span>
+  <span>Node.js</span>
+  <span>Angular</span>
+  <span>React / React Native</span>
+  <span>GitHub</span>
+  <span>Firebase</span>
+  <span>MongoDB</span>
+</div>

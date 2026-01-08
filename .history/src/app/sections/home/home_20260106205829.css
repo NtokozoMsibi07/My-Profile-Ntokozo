@@ -1,0 +1,19 @@
+/* Slide in from off-screen and remain long */
+@keyframes slide-in-outside {
+  0% {
+    transform: translateX(-100vw); /* start off-screen to the left */
+    width: 10rem; /* line width */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* final position */
+    opacity: 1;
+  }
+}
+
+.slide-in-outside {
+  display: block;
+  height: 0.25rem; /* line thickness */
+  background-color: #611e1e;
+  animation: slide-in-outside 1.2s ease-out forwards;
+}

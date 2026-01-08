@@ -1,0 +1,21 @@
+
+@keyframes slide-in-extend {
+  0% {
+    transform: translateX(-100%);
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    width: 10rem; 
+    opacity: 1;
+  }
+}
+
+.slide-in-extend {
+  animation: slide-in-extend 1.2s ease-out forwards;
+  display: block;
+  height: 0.25rem;
+  width: 50px;
+  background-color: #611e1e;
+}

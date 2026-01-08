@@ -1,0 +1,24 @@
+.line-wrapper {
+  position: relative;
+  overflow: visible;
+}
+
+.slide-in-outside {
+  position: absolute;
+  left: -100vw;
+  width: 20rem;
+  height: 0.25rem;
+  background-color: #611e1e;
+  animation: slide-in-outside 1.2s ease-out forwards;
+}
+
+@keyframes slide-in-outside {
+  0% {
+    left: -100vw;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
