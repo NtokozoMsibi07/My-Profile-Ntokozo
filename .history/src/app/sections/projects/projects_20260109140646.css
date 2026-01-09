@@ -1,0 +1,29 @@
+.about-divider {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #611e1e;
+  margin: 2rem 0;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.8s ease-out;
+}
+
+/* Animate when About is visible */
+.show-line .about-divider {
+  transform: scaleX(1);
+}
+
+/* Responsive spacing (matches Tailwind values) */
+@media (min-width: 640px) {
+  .about-divider {
+    margin: 2.5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-divider {
+    margin: 3rem 0;
+  }
+}

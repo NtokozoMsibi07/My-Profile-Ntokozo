@@ -1,0 +1,28 @@
+.projects-divider {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #611e1e;
+}
+
+/* Responsive spacing */
+@media (min-width: 640px) {
+  .projects-divider {
+    margin: 2.5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-divider {
+    margin: 3rem 0;
+  }
+}
+
+.projects-vertical-line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #611e1e;
+}

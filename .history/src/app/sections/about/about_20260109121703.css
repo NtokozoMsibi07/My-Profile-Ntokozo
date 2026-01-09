@@ -1,0 +1,24 @@
+.about-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #611e1e;
+
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.9s ease-out;
+}
+
+/* When visible */
+.show-line .about-line {
+  transform: scaleY(1);
+}
+
+/* Desktop height override */
+@media (min-width: 768px) {
+  .about-line {
+    height: 35rem; /* same as h-140 */
+  }
+}
