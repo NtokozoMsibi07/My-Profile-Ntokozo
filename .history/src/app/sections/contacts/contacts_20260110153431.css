@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   top: 50px; /* start lower */
-  bottom: -100px; /* stop at bottom of parent container */
+  bottom: -80px; /* stop at bottom of parent container */
   width: 4px;
   background-color: #611e1e;
   transition: opacity 0.8s ease, height 0.8s ease;

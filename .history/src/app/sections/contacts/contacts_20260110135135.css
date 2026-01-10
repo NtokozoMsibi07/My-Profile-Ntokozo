@@ -1,9 +1,10 @@
 .about-line {
   position: absolute;
   left: 0;
-  top: 50px; /* start lower */
-  bottom: -100px; /* stop at bottom of parent container */
+  top: 0;
   width: 4px;
+  min-height: 40px;
+  height: 100%;
   background-color: #611e1e;
   transition: opacity 0.8s ease, height 0.8s ease;
 }

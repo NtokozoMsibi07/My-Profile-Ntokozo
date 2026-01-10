@@ -1,10 +1,12 @@
 .about-line {
   position: absolute;
   left: 0;
-  top: 50px; /* start lower */
-  bottom: -100px; /* stop at bottom of parent container */
+  top: 0;
   width: 4px;
+  height: 100%;
   background-color: #611e1e;
+
+  opacity: 0.3;
   transition: opacity 0.8s ease, height 0.8s ease;
 }
 
@@ -19,6 +21,8 @@
   height: 4px;
   background-color: #611e1e;
   margin: 2rem 0;
+
+  opacity: 0.3;
   transition: opacity 0.8s ease;
 }
 
