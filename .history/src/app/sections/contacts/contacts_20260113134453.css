@@ -1,0 +1,36 @@
+/* Vertical line slides bottom to top */
+.about-line {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 4px;
+  height: calc(100% - 50px);
+  background-color: #611e1e;
+
+  transform: scaleY(0); /* start hidden */
+  transform-origin: bottom; /* grow from bottom */
+  transition: transform 1.8s ease-out;
+}
+
+/* Animate when section is active */
+.show-line .about-line {
+  transform: scaleY(1); /* grow to full height */
+}
+
+/* Horizontal divider slides left to right */
+.about-divider {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #611e1e;
+  margin: 2rem 0;
+
+  transform: scaleX(0); /* start hidden */
+  transform-origin: left;
+  transition: transform 1.8s ease-out 0.3s; /* optional delay after line */
+}
+
+/* Animate when section is active */
+.show-line .about-divider {
+  transform: scaleX(1); /* animate to full width */
+}

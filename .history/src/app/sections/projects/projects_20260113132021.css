@@ -1,0 +1,44 @@
+.projects-divider {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #611e1e;
+  margin-bottom: 18px;
+
+  /* Start with 0 width */
+  transform: translateX(-100%);
+  animation: slideIn 1.8s ease forwards;
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.projects-vertical-line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #611e1e;
+
+  /* Start collapsed at the bottom */
+  transform: scaleY(0);
+  transform-origin: bottom; /* Animate from bottom to top */
+  animation: slideUp 1.8s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

@@ -1,0 +1,36 @@
+/* Vertical line slides bottom → top */
+.about-line {
+  position: absolute;
+  left: 0;
+  bottom: 0; /* bottom → top animation */
+  width: 4px;
+  height: calc(100% - 50px);
+  background-color: #611e1e;
+
+  transform: scaleY(0); /* START HIDDEN */
+  transform-origin: bottom; /* GROWS UP */
+  transition: transform 1.8s ease-out;
+}
+
+/* Animate to full height */
+.show-line .about-line {
+  transform: scaleY(1); /* END STATE */
+}
+
+/* Horizontal divider slides left → right */
+.about-divider {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #611e1e;
+  margin: 2rem 0;
+
+  transform: scaleX(0); /* START HIDDEN */
+  transform-origin: left; /* GROWS RIGHT */
+  transition: transform 1.2s ease-out 1.8s; /* delay after vertical line */
+}
+
+/* Animate to full width */
+.show-line .about-divider {
+  transform: scaleX(1); /* END STATE */
+}

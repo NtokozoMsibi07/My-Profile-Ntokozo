@@ -1,0 +1,33 @@
+/* Vertical line */
+.about-line {
+  position: absolute;
+  left: 0;
+  top: 0; /* start at top */
+  width: 4px;
+  height: 0; /* initial height 0 */
+  background-color: #611e1e;
+  opacity: 0;
+  transition: height 1.2s ease, opacity 0.3s ease;
+}
+
+/* Horizontal divider */
+.about-divider {
+  display: block;
+  width: 0; /* initial width 0 */
+  height: 4px;
+  background-color: #611e1e;
+  margin: 2rem 0;
+  opacity: 0;
+  transition: width 1.2s ease 1.2s, opacity 0.3s ease 1.2s; /* delay for second step */
+}
+
+/* When section is shown */
+.show-line .about-line {
+  height: 200px; /* final height of vertical line */
+  opacity: 1;
+}
+
+.show-line .about-divider {
+  width: 100%; /* expand horizontal divider */
+  opacity: 1;
+}

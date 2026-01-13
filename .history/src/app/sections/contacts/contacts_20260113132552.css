@@ -1,0 +1,56 @@
+/* Vertical line (slides from top to bottom) */
+.about-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #611e1e;
+
+  transform: scaleY(0); /* hidden initially */
+  transform-origin: top;
+  transition: transform 1.2s ease-out; /* vertical line duration */
+}
+
+/* When About section is active */
+.show-line .about-line {
+  transform: scaleY(1);
+}
+
+/* Desktop override for taller line */
+@media (min-width: 768px) {
+  .about-line {
+    height: 35rem; /* adjust as needed */
+  }
+}
+
+/* Horizontal divider (slides from left to right after vertical line) */
+.about-divider {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #611e1e;
+  margin: 2rem 0;
+
+  transform: scaleX(0); /* hidden initially */
+  transform-origin: left; /* slide from left to right */
+  transition: transform 1.2s ease-out 1.2s; /* delay = vertical line duration */
+}
+
+/* Animate divider when About is visible */
+.show-line .about-divider {
+  transform: scaleX(1);
+}
+
+/* Responsive spacing for divider */
+@media (min-width: 640px) {
+  .about-divider {
+    margin: 2.5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-divider {
+    margin: 3rem 0;
+  }
+}

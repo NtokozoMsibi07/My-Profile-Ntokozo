@@ -1,0 +1,40 @@
+/* =========================
+   Divider line (right → left)
+   ========================= */
+.projects-divider {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #611e1e;
+  margin-bottom: 18px;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1.8s ease-out 0.6s;
+}
+
+/* Animate when section is active */
+.show-line .projects-divider {
+  transform: scaleX(1);
+}
+
+/* =========================
+   Vertical line (bottom → top)
+   ========================= */
+.projects-vertical-line {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  width: 4px;
+  height: calc(100% - 10px);
+  background-color: #611e1e;
+
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 1.8s ease-out;
+}
+
+/* Animate when section is active */
+.show-line .projects-vertical-line {
+  transform: scaleY(1);
+}
