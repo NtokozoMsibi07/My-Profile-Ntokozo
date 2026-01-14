@@ -1,0 +1,113 @@
+{
+  "configVersion": 1,
+  "timestamp": 1768389919071,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main-ZX4AJJB6.js",
+        "/manifest.webmanifest",
+        "/styles-XFNTLLX7.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/App_Develop.png",
+        "/assets/icons/Firebase-Logo.png",
+        "/assets/icons/LinkedIn_2021.svg.png",
+        "/assets/icons/MongoDB_Logo.svg.png",
+        "/assets/icons/React-icon.svg.png",
+        "/assets/icons/angular-icon.webp",
+        "/assets/icons/design.png",
+        "/assets/icons/email.png",
+        "/assets/icons/github.png",
+        "/assets/icons/hosting.png",
+        "/assets/icons/node.png",
+        "/assets/icons/phone-png-3.png",
+        "/assets/icons/pnet-logo-01.png",
+        "/assets/icons/react.webp",
+        "/assets/icons/typescript.png",
+        "/assets/icons/web_develop.png",
+        "/assets/icons/whatsapp.png",
+        "/assets/images/my_image.jpg",
+        "/icons/icon-128x128.png",
+        "/icons/icon-144x144.png",
+        "/icons/icon-152x152.png",
+        "/icons/icon-192x192.png",
+        "/icons/icon-384x384.png",
+        "/icons/icon-512x512.png",
+        "/icons/icon-72x72.png",
+        "/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/App_Develop.png": "87d00d311aee7af0bb96ac10f4598c04eece4ecb",
+    "/assets/icons/Firebase-Logo.png": "afa0918e2585e0106eca938b4a09294fbcd27b73",
+    "/assets/icons/LinkedIn_2021.svg.png": "0de3fd1090844e61be5cb5ccbf17444c2b03f931",
+    "/assets/icons/MongoDB_Logo.svg.png": "c65bc3f57550292d36e6f8011e91249083fee9c5",
+    "/assets/icons/React-icon.svg.png": "2d2343c215a1a66f67e920350bcf133bb4c5c2d2",
+    "/assets/icons/angular-icon.webp": "795b62d00495efbe220d28617f717de45016e2ef",
+    "/assets/icons/design.png": "fc55eaabf7e41143ae677ea6ac30008b0fe65544",
+    "/assets/icons/email.png": "13fb6cba6cd21e0296ece00f971e58e2fefb6f46",
+    "/assets/icons/github.png": "33651b47fc3875c1394b1f5f6b894749a0bc1f7e",
+    "/assets/icons/hosting.png": "fe3840a004c3ec3b37f5209beeeb56a13e8bda68",
+    "/assets/icons/node.png": "333d2a4f42a7653323bbf3f322976fa598c540af",
+    "/assets/icons/phone-png-3.png": "c60daba7b7ca7257b9035dd9e91b2fbcb176c3e9",
+    "/assets/icons/pnet-logo-01.png": "8164d5be1bff7c060caf4bf1f87656ac708671ef",
+    "/assets/icons/react.webp": "1ea210098b35c7ef06e6d073467ea17a7abdedde",
+    "/assets/icons/typescript.png": "1a432dd9d7d19a367fd2cb9446f6bc8962535b03",
+    "/assets/icons/web_develop.png": "7d74a457e83bc4b9975b93d142e50110a54b9515",
+    "/assets/icons/whatsapp.png": "1fe60c22866c1e13ace1520e9168e6c5056bff90",
+    "/assets/images/my_image.jpg": "4b56b7c5d6c09366becbd095368d72de7e42a6e8",
+    "/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/index.html": "d9706a178a8cc9f1e3bc4ad464ca8c89b499a145",
+    "/main-ZX4AJJB6.js": "50fc0b71102c7a5fbe9f7685750b6a76b83e64cf",
+    "/manifest.webmanifest": "cf786f7abb174578af2b8de24e26fabba3da379f",
+    "/styles-XFNTLLX7.css": "62628b9cbfa55ea3af2df272edd575001a452df0"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

@@ -60,7 +60,7 @@ import {
   ɵɵinject,
   ɵɵinjectAttribute,
   ɵɵstyleProp
-} from "./chunk-UHEQVDSS.js";
+} from "./chunk-Y4UEFSI6.js";
 
 // node_modules/@angular/common/fesm2022/_platform_location-chunk.mjs
 var _DOM = null;
@@ -4628,4 +4628,4 @@ export {
   PRECONNECT_CHECK_BLOCKLIST,
   NgOptimizedImage
 };
-//# sourceMappingURL=chunk-OZCRHMBY.js.map
+//# sourceMappingURL=chunk-DZS4CD54.js.map
