@@ -1,0 +1,156 @@
+/* ============================== */
+/* HOME / HERO SECTION STYLES     */
+/* ============================== */
+
+/* Hero image spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.clip-left {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+
+.clip-right {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.animate-spin {
+  animation: spin linear infinite;
+}
+
+/* Desktop / default */
+.slide-in-extend {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #611e1e;
+  animation: slideIn 1s ease forwards;
+}
+
+/* Mobile smaller width */
+@media (max-width: 768px) {
+  .slide-in-extend {
+    width: 50px; /* shorter line for smaller screens */
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Technology marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+/* ============================== */
+/* MOBILE SPECIFIC STYLES          */
+/* ============================== */
+@media (max-width: 768px) {
+  /* Reduce hero font sizes */
+  #home h1 {
+    font-size: 3rem !important;
+  }
+
+  #home p {
+    font-size: 1.25rem !important;
+  }
+
+  /* Buttons smaller on mobile */
+  #home button {
+    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  /* Reduce hero image size */
+  #home .w-64 {
+    width: 12rem !important;
+    height: 12rem !important;
+  }
+
+  /* Tech marquee smaller text */
+  .animate-marquee {
+    font-size: 0.75rem !important;
+  }
+
+  /* Hero section padding */
+  #home {
+    padding-top: 6rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Hamburger menu adjustments */
+  header button svg {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+  }
+
+  /* Dropdown menu spacing */
+  .md:hidden div[ngIf] a {
+    padding: 0.75rem 1rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #home h1 {
+    font-size: 4.5rem !important;
+  }
+
+  #home p {
+    font-size: 1.5rem !important;
+  }
+
+  #home .w-64 {
+    width: 14rem !important;
+    height: 14rem !important;
+  }
+}
+
+/* ============================== */
+/* TECHNOLOGY BAR FULL WIDTH MOBILE ONLY */
+/* ============================== */
+@media (max-width: 768px) {
+  /* Target mobile view only */
+  #home .technology-bar {
+    width: 100vw; /* full viewport width */
+    position: relative;
+    left: 50%; /* move to the center */
+    right: 50%;
+    margin-left: -50vw; /* offset parent padding */
+    margin-right: -50vw; /* offset parent padding */
+  }
+
+  /* Inner marquee adjustments for mobile */
+  #home .technology-bar .animate-marquee {
+    gap: 1rem; /* smaller gap for mobile */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.75rem;
+  }
+}

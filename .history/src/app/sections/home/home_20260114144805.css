@@ -1,0 +1,318 @@
+/* ============================== */
+/* HOME / HERO SECTION STYLES     */
+/* ============================== */
+
+/* Hero image spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.clip-left {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+
+.clip-right {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.animate-spin {
+  animation: spin linear infinite;
+}
+
+/* Slide-in for the red line */
+.slide-in-extend {
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #611e1e;
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 40px;
+    opacity: 1;
+  }
+}
+
+/* Technology marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+/* ============================== */
+/* MOBILE SPECIFIC STYLES          */
+/* ============================== */
+@media (max-width: 768px) {
+  /* Reduce hero font sizes */
+  #home h1 {
+    font-size: 3rem !important;
+  }
+
+  #home p {
+    font-size: 1.25rem !important;
+  }
+
+  /* Buttons smaller on mobile */
+  #home button {
+    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  /* Reduce hero image size */
+  #home .w-64 {
+    width: 12rem !important;
+    height: 12rem !important;
+  }
+
+  /* Tech marquee smaller text */
+  .animate-marquee {
+    font-size: 0.75rem !important;
+  }
+
+  /* Hero section padding */
+  #home {
+    padding-top: 6rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Hamburger menu adjustments */
+  header button svg {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+  }
+
+  /* Dropdown menu spacing */
+  .md:hidden div[ngIf] a {
+    padding: 0.75rem 1rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #home h1 {
+    font-size: 4.5rem !important;
+  }
+
+  #home p {
+    font-size: 1.5rem !important;
+  }
+
+  #home .w-64 {
+    width: 14rem !important;
+    height: 14rem !important;
+  }
+}
+
+/* ============================== */
+/* TECHNOLOGY BAR FULL WIDTH MOBILE */
+/* ============================== */
+@media (max-width: 768px) {
+  #home .technology-bar {
+    width: 100vw; /* full viewport width */
+    position: relative;
+    left: 50%; /* move to the center */
+    right: 50%;
+    margin-left: -50vw; /* offset parent padding */
+    margin-right: -50vw; /* offset parent padding */
+  }
+}
+
+/* Adjust inner marquee spacing for mobile */
+#home .technology-bar .animate-marquee {
+  gap: 1rem; /* smaller gap for mobile */
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* ============================== */
+/* EXTRA-SMALL MOBILE (iPhone SE, 375px) */
+/* ============================== */
+@media (max-width: 400px) {
+  /* ===== HEADER ===== */
+  header {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  header h1 {
+    font-size: 1.5rem !important;
+    padding: 2px 0 !important;
+  }
+
+  nav a {
+    font-size: 0.85rem !important;
+    padding: 0.4rem 0.6rem !important;
+  }
+
+  header button {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.5rem !important;
+  }
+
+  /* ===== HERO / HOME SECTION ===== */
+  #home {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 5rem !important;
+  }
+
+  #home h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+  }
+
+  #home p {
+    font-size: 1rem !important;
+  }
+
+  #home button {
+    font-size: 0.875rem !important;
+    padding: 0.4rem 0.8rem !important;
+  }
+
+  #home .w-64 {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+
+  #home > .relative.z-10 {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Hero “Full Stack Developer” box */
+  #home p[px-6] {
+    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  /* ===== TECHNOLOGY BAR ===== */
+  #home .technology-bar {
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  #home .technology-bar .animate-marquee {
+    font-size: 0.7rem !important;
+    gap: 0.8rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  /* ===== ABOUT SECTION ===== */
+  #about {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  #about h2 {
+    font-size: 2rem !important;
+  }
+
+  #about h3 {
+    font-size: 1rem !important;
+  }
+
+  #about p {
+    font-size: 0.9rem !important;
+  }
+
+  #about .grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    text-align: center !important;
+  }
+
+  /* Vertical red line */
+  #about .about-line {
+    left: 5px !important; /* adjust if needed */
+  }
+
+  /* ===== PROJECTS SECTION ===== */
+  #projects {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  #projects h2 {
+    font-size: 2rem !important;
+  }
+
+  #projects .project-card {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  #projects .project-card img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* ===== CONTACTS SECTION ===== */
+  #contacts {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  #contacts h2 {
+    font-size: 2rem !important;
+  }
+
+  #contacts form input,
+  #contacts form textarea,
+  #contacts form button {
+    font-size: 0.85rem !important;
+    padding: 0.4rem 0.6rem !important;
+  }
+
+  /* ===== NAVIGATION DROPDOWN FOR MOBILE ===== */
+  nav {
+    display: none !important; /* hide desktop menu */
+  }
+
+  #mobile-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Hamburger icon */
+  .hamburger {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+}

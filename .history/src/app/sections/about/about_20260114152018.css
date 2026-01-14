@@ -1,0 +1,141 @@
+.about-line {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 4px;
+  height: calc(100% - 10px);
+  background-color: #611e1e;
+
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 1.8s ease-out;
+}
+
+/* When visible */
+.show-line .about-line {
+  transform: scaleY(1);
+}
+
+/* Desktop height override */
+@media (min-width: 768px) {
+  .about-line {
+    height: 35rem; /* same as h-140 */
+  }
+}
+
+/* Horizontal divider */
+.about-divider {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #611e1e;
+  margin: 2rem 0;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 1.8s ease-out;
+}
+
+/* Animate when About is visible */
+.show-line .about-divider {
+  transform: scaleX(1);
+}
+
+/* Responsive spacing (matches Tailwind values) */
+@media (min-width: 640px) {
+  .about-divider {
+    margin: 2.5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-divider {
+    margin: 3rem 0;
+  }
+}
+
+/* ============================== */
+/* ABOUT PAGE - MOBILE ADJUSTMENTS */
+/* ============================== */
+@media (max-width: 375px) {
+  /* Container padding adjustments */
+  #about > div {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    gap: 1rem !important;
+  }
+
+  /* LEFT SIDE - Icon & text blocks */
+  #about .flex-1.pl-6,
+  #about .flex-1.sm\:pl-8,
+  #about .flex-1.md\:pl-10 {
+    padding-left: 0 !important;
+  }
+
+  #about .flex.items-center.gap-4,
+  #about .flex.items-center.gap-6 {
+    gap: 0.5rem !important;
+    padding-top: 1rem !important;
+  }
+
+  #about h3.text-xl,
+  #about h3.text-lg {
+    font-size: 1rem !important; /* smaller icons text */
+  }
+
+  #about img.w-8,
+  #about img.h-8,
+  #about img.md\:w-10,
+  #about img.md\:h-10 {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  /* RIGHT SIDE - About Me */
+  #about h2 {
+    font-size: 1.75rem !important; /* smaller heading */
+    margin-bottom: 0.75rem !important;
+  }
+
+  #about p.text-gray-400 {
+    font-size: 0.875rem !important; /* smaller description text */
+    line-height: 1.25rem !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  /* Divider */
+  #about .about-divider {
+    height: 2px !important;
+    margin: 0.5rem 0 !important;
+  }
+
+  /* Stats grid adjustments */
+  #about .grid.grid-cols-1.sm\:grid-cols-3 {
+    grid-template-columns: 1fr !important; /* single column on mobile */
+    gap: 0.75rem !important;
+    text-align: center !important;
+  }
+
+  #about .grid div h3 {
+    font-size: 1.25rem !important; /* smaller numbers */
+  }
+
+  #about .grid div p {
+    font-size: 0.75rem !important; /* smaller labels */
+    margin-top: 0.25rem !important;
+  }
+
+  /* Vertical spacing */
+  #about .space-y-10,
+  #about .space-y-14 {
+    gap: 1rem !important;
+  }
+
+  /* Top padding for left side */
+  #about .pt-24,
+  #about .sm\:pt-32,
+  #about .md\:pt-50 {
+    padding-top: 1.5rem !important;
+  }
+}
