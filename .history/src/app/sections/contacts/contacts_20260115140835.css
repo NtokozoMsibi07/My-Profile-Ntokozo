@@ -9,8 +9,8 @@
   height: calc(100% - 10px);
   background-color: #611e1e;
 
-  transform: scaleY(0);
-  transform-origin: bottom;
+  transform: scaleY(0); /* start hidden */
+  transform-origin: bottom; /* grow from bottom */
   transition: transform 1.8s ease-out;
 }
 
@@ -29,9 +29,9 @@
   background-color: #611e1e;
   margin: 2rem 0;
 
-  transform: scaleX(0);
+  transform: scaleX(0); /* start hidden */
   transform-origin: right;
-  transition: transform 1.8s ease-out 0.6s;
+  transition: transform 1.8s ease-out 0.6s; /* delay after line */
 }
 
 /* Animate when section is active */
@@ -76,8 +76,8 @@
 
   /* Icons slightly smaller */
   #contacts img {
-    width: 2rem !important;
-    height: 2rem !important;
+    width: 3rem !important;
+    height: 3rem !important;
   }
 
   /* Right side text */

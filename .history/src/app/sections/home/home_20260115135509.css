@@ -36,7 +36,7 @@
 /* Mobile smaller width */
 @media (max-width: 768px) {
   .slide-in-extend {
-    width: 50px;
+    width: 50px; /* shorter line for smaller screens */
   }
 }
 
@@ -83,7 +83,7 @@
   #home button {
     font-size: 1rem !important;
     padding: 0.5rem 1rem !important;
-    border: 2px solid #611e1e !important;
+    border: 1px solid #611e1e !important;
   }
 
   /* Reduce hero image size */
@@ -139,17 +139,17 @@
 @media (max-width: 768px) {
   /* Target mobile view only */
   #home .technology-bar {
-    width: 100vw;
+    width: 100vw; /* full viewport width */
     position: relative;
-    left: 50%;
+    left: 50%; /* move to the center */
     right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: -50vw; /* offset parent padding */
+    margin-right: -50vw; /* offset parent padding */
   }
 
   /* Inner marquee adjustments for mobile */
   #home .technology-bar .animate-marquee {
-    gap: 1rem;
+    gap: 1rem; /* smaller gap for mobile */
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     font-size: 0.75rem;
@@ -164,18 +164,18 @@
     font-size: 0.95rem !important;
     padding: 0.5rem !important;
     text-align: center;
-    white-space: nowrap;
+    white-space: nowrap; /* prevents wrapping */
     overflow: hidden;
     text-overflow: ellipsis;
   }
   /* Hero main heading */
   #home h1 {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem !important; /* smaller "Hello." */
   }
 
   /* Red slide-in line */
   #home .slide-in-extend {
-    width: 30px !important;
+    width: 30px !important; /* shorter line */
     height: 2px !important;
   }
 
@@ -184,7 +184,7 @@
   #home p.text-2xl,
   #home p.text-4xl,
   #home p.text-5xl {
-    font-size: 1rem !important;
+    font-size: 1rem !important; /* smaller text */
     margin-bottom: 0.5rem !important;
   }
 
@@ -224,7 +224,7 @@
 
   /* Adjust Hero main heading */
   #home h1.text-5xl {
-    font-size: 5rem !important;
+    font-size: 5rem !important; /* smaller than desktop */
   }
 
   /* Red slide-in line */
@@ -274,7 +274,7 @@
 
   #home .technology-bar .animate-marquee {
     gap: 1.5rem;
-    font-size: 0.875rem;
+    font-size: 0.875rem; /* slightly larger than mobile */
   }
 }
 
@@ -347,13 +347,13 @@
   }
 
   #home .flex.relative.z-10 {
-    gap: 1rem !important;
+    gap: 1rem !important; /* smaller gap between left & right sides */
   }
 
   /* Hero heading */
   #home h1.text-5xl {
     font-size: 5.5rem !important;
-    word-wrap: break-word;
+    word-wrap: break-word; /* prevent overflow */
   }
 
   #home p.text-xl,
@@ -361,7 +361,7 @@
   #home p.text-4xl,
   #home p.text-5xl {
     font-size: 1.75rem !important;
-    line-height: 1.2 !important;
+    line-height: 1.2 !important; /* tighter spacing */
   }
 
   #home p.inline-block {
@@ -431,280 +431,5 @@
   #home .technology-bar {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
-  }
-}
-
-/* ============================== */
-/* (390 × 844) */
-/* ============================== */
-@media (min-width: 376px) and (max-width: 414px) {
-  /* Header name */
-  header h1 {
-    font-size: 1.75rem !important;
-    padding: 0.5rem !important;
-  }
-
-  /* Hero heading */
-  #home h1 {
-    font-size: 3rem !important;
-  }
-
-  /* Red line */
-  #home .slide-in-extend {
-    width: 40px !important;
-    height: 2px !important;
-  }
-
-  /* "I'm Ntokozo" */
-  #home p.text-xl,
-  #home p.text-2xl,
-  #home p.text-4xl,
-  #home p.text-5xl {
-    font-size: 1.25rem !important;
-    margin-bottom: 0.75rem !important;
-  }
-
-  /* Full Stack box */
-  #home p.inline-block {
-    font-size: 1rem !important;
-    padding: 0.5rem 0.75rem !important;
-    border-width: 2px !important;
-  }
-
-  /* Buttons */
-  #home button {
-    font-size: 0.9rem !important;
-    padding: 0.5rem 0.75rem !important;
-  }
-
-  /* Reduce spacing */
-  #home .flex.items-center {
-    gap: 0.75rem !important;
-  }
-
-  #home .flex.flex-col.gap-4 {
-    gap: 0.75rem !important;
-  }
-
-  /* Hero image */
-  #home .w-64,
-  #home .w-72 {
-    width: 14rem !important;
-    height: 14rem !important;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  #home .technology-bar {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-  }
-
-  #home .technology-bar .animate-marquee {
-    font-size: 0.85rem;
-    gap: 1.25rem;
-  }
-}
-
-/* ============================== */
-/* 540 × 720 FIX (STABLE) */
-/* ============================== */
-@media (min-width: 480px) and (max-width: 600px) {
-  /* STOP HORIZONTAL OVERFLOW */
-  body {
-    overflow-x: hidden;
-  }
-
-  #home {
-    overflow-x: hidden;
-  }
-
-  /* FORCE COLUMN LAYOUT */
-  #home .relative.z-10.w-full {
-    flex-direction: column !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-    gap: 2.5rem !important;
-  }
-
-  /* HERO TEXT */
-  #home h1 {
-    font-size: 3rem !important;
-    text-align: center;
-  }
-
-  /* NAME ROW */
-  #home .flex.items-center {
-    justify-content: center;
-    gap: 0.75rem !important;
-  }
-
-  #home .slide-in-extend {
-    width: 30px !important;
-    height: 2px !important;
-  }
-
-  #home p {
-    text-align: center;
-  }
-
-  /* FULL STACK BOX */
-  #home p.inline-block {
-    font-size: 1.05rem !important;
-    padding: 0.6rem 1.2rem !important;
-    border-width: 2px !important;
-  }
-
-  /* BUTTONS */
-  #home .flex.flex-col {
-    align-items: center;
-    gap: 0.75rem !important;
-    padding-bottom: 30px !important;
-  }
-
-  #home button {
-    font-size: 0.95rem !important;
-    padding: 0.45rem 1.1rem !important;
-  }
-
-  /* IMAGE FIX (CRITICAL) */
-  #home .relative.w-64,
-  #home .relative.w-72,
-  #home .relative.w-96 {
-    width: 240px !important;
-    height: 240px !important;
-  }
-
-  /* Mobile spin with scale */
-  @keyframes spinScaled {
-    from {
-      transform: rotate(0deg) scale(1.1);
-    }
-    to {
-      transform: rotate(360deg) scale(1.1);
-    }
-  }
-
-  /* Restore spinning on mobile */
-  #home .animate-spin {
-    animation: spinScaled 3s linear infinite !important;
-  }
-
-  /* PREVENT IMAGE OVERLAP */
-  #home .flex-1.flex.justify-center {
-    margin-top: 1.5rem !important;
-  }
-
-  /* TECHNOLOGY BAR — EDGE TO EDGE */
-  #home .technology-bar {
-    width: 100vw !important;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/* ================================================= */
-/* SMARTPHONE LANDSCAPE FIX (FORCE OVERRIDE)         */
-/* ================================================= */
-
-@media (max-width: 767px) and (orientation: landscape) {
-  /* FORCE SAFE VIEWPORT HEIGHT (NOTCH SUPPORT) */
-  #home {
-    min-height: calc(100vh - env(safe-area-inset-bottom)) !important;
-    padding-top: 3rem !important;
-    padding-bottom: 1rem !important;
-    overflow-x: hidden !important;
-  }
-
-  /* HERO LAYOUT — SIDE BY SIDE */
-  #home .hero {
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    gap: 1.5rem !important;
-  }
-
-  /* HERO TEXT CONTAINER */
-  #home .hero-text {
-    flex: 1 !important;
-    text-align: left !important;
-  }
-
-  /* MAIN HEADING */
-  #home .hero-title {
-    font-size: 2.2rem !important;
-    line-height: 1.1 !important;
-  }
-
-  /* SUBTITLE / NAME */
-  #home .hero-subtitle {
-    font-size: 1rem !important;
-    line-height: 1.2 !important;
-  }
-
-  /* NAME ROW ALIGNMENT */
-  #home .hero-name-row {
-    justify-content: flex-start !important;
-    gap: 0.5rem !important;
-  }
-
-  /* RED SLIDE LINE */
-  #home .hero-line {
-    width: 25px !important;
-    height: 2px !important;
-  }
-
-  /* ROLE BADGE */
-  #home .hero-role {
-    font-size: 0.8rem !important;
-    padding: 0.3rem 0.6rem !important;
-    border-width: 2px !important;
-  }
-
-  /* ACTION BUTTONS */
-  #home .hero-actions {
-    flex-direction: row !important;
-    gap: 0.5rem !important;
-    align-items: center !important;
-  }
-
-  #home .hero-actions button {
-    font-size: 0.8rem !important;
-    padding: 0.35rem 0.7rem !important;
-  }
-
-  /* HERO IMAGE — REDUCED SIZE */
-  #home .hero-image {
-    width: 9rem !important;
-    height: 9rem !important;
-    max-width: 9rem !important;
-    max-height: 9rem !important;
-  }
-
-  /* PREVENT IMAGE OVERFLOW */
-  #home .flex-1.flex.justify-center {
-    max-width: 50% !important;
-    overflow: hidden !important;
-  }
-
-  /* TECHNOLOGY BAR — EDGE TO EDGE */
-  #home .technology-bar {
-    width: 100vw !important;
-    position: relative !important;
-    left: 50% !important;
-    margin-left: -50vw !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  /* MARQUEE TEXT */
-  #home .technology-bar .animate-marquee {
-    font-size: 0.75rem !important;
-    gap: 1rem !important;
   }
 }
