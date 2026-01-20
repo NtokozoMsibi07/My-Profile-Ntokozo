@@ -9,19 +9,34 @@
       <!-- Contact Items -->
       <div class="flex items-center gap-4 md:gap-6 pt-24 sm:pt-32 md:pt-50">
         <img src="assets/icons/email.png" class="w-8 h-8 md:w-10 md:h-10" />
-        <span class="break-all md:break-normal text-xl md:text-3xl font-semibold">
+        <a
+          href="mailto:msibindlondlo71@gmail.com"
+          target="_blank"
+          class="break-all md:break-normal text-xl md:text-3xl font-semibold text-white hover:text-blue-500 hover:underline"
+        >
           msibindlondlo71@gmail.com
-        </span>
+        </a>
       </div>
 
       <div class="flex items-center gap-4 md:gap-6">
         <img src="assets/icons/phone-png-3.png" class="w-8 h-8 md:w-10 md:h-10" />
-        <span class="text-xl md:text-3xl font-semibold">078 857 4493</span>
+        <a
+          href="tel:+27788574493"
+          class="text-xl md:text-3xl font-semibold text-white hover:text-blue-500 hover:underline"
+        >
+          078 857 4493
+        </a>
       </div>
 
       <div class="flex items-center gap-4 md:gap-6">
         <img src="assets/icons/whatsapp.png" class="w-8 h-8 md:w-10 md:h-10" />
-        <span class="text-xl md:text-3xl font-semibold">071 858 5256</span>
+        <a
+          href="https://wa.me/27718585256?text=Hello%20Ntokozo!"
+          target="_blank"
+          class="text-xl md:text-3xl font-semibold text-white hover:text-green-500 hover:underline"
+        >
+          071 858 5256
+        </a>
       </div>
 
       <div class="flex items-center gap-4 md:gap-6">
@@ -29,7 +44,7 @@
         <a
           href="https://github.com/NtokozoMsibi07"
           target="_blank"
-          class="text-xl md:text-3xl font-semibold break-all md:break-normal"
+          class="text-xl md:text-3xl font-semibold break-all md:break-normal hover:text-blue-900 hover:underline"
         >
           github.com/NtokozoMsibi07
         </a>
@@ -53,23 +68,56 @@
       <h3 class="text-2xl md:text-3xl font-semibold text-center lg:text-left mb-10">My Profiles</h3>
 
       <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 md:gap-12">
-        <a
-          href="#"
-          class="w-64 md:w-72 border-4 border-[#611E1E] py-4 flex items-center justify-center hover:bg-[#611E1E] transition"
-        >
-          <img
-            src="assets/icons/LinkedIn_2021.svg.png"
-            alt="LinkedIn"
-            class="h-9 md:h-10 object-contain"
-          />
-        </a>
+        <div class="hover-container">
+          <a
+            href="https://www.linkedin.com/in/ntokozo-gift-msibi-4b193a2ab"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-64 md:w-72 border-4 border-[#611E1E] py-4 flex items-center justify-center hover:bg-red-900 transition"
+          >
+            <img
+              src="assets/icons/LinkedIn_2021.svg.png"
+              alt="LinkedIn"
+              class="h-9 md:h-10 object-contain"
+            />
+          </a>
+          <!-- Hover list -->
+          <ul class="hover-list">
+            <li>
+              <img src="assets/icons/small-linkedIn.png" alt="me" class="icon" />Click to LinkedIn
+              Profile
+            </li>
+          </ul>
+        </div>
 
-        <a
-          href="#"
-          class="w-64 md:w-72 border-4 border-[#611E1E] py-4 flex items-center justify-center hover:bg-[#611E1E] transition"
-        >
-          <img src="assets/icons/pnet-logo-01.png" alt="Pnet" class="h-9 md:h-10 object-contain" />
-        </a>
+        <div class="hover-container">
+          <a
+            class="w-64 md:w-72 border-4 border-[#611E1E] py-4 flex items-center justify-center hover:bg-red-900 transition"
+          >
+            <img
+              src="assets/icons/pnet-logo-01.png"
+              alt="Pnet"
+              class="h-9 md:h-10 object-contain"
+            />
+          </a>
+
+          <!-- Hover list -->
+          <ul class="hover-list">
+            <li>
+              <img src="assets/images/my_image.jpg" alt="me" class="icon rounded-2xl" />Ntokozo Gift
+              Msibi
+            </li>
+            <li>Full-Stack Developer</li>
+            <li>
+              <img src="assets/icons/email.png" alt="email" class="icon" />msibindlondlo71@gmail.com
+            </li>
+            <li><img src="assets/icons/phone-png-3.png" alt="phone" class="icon" />078 857 4493</li>
+            <li>
+              <img src="assets/icons/location-icon.png" alt="location" class="icon" />Gauteng, South
+              Africa
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

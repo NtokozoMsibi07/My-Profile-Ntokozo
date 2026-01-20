@@ -40,7 +40,7 @@
 }
 
 /* ============================== */
-/* IPAD PRO FIX (1024 × 1366)     */
+/* (1024 × 1366)     */
 /* ============================== */
 @media (min-width: 1024px) and (max-width: 1366px) {
   /* Prevent horizontal overflow */
@@ -95,4 +95,97 @@
   #contacts a.md\\:w-72 {
     width: 16rem !important;
   }
+}
+/*===========================*/
+/*     HOVER STYLING         */
+/*===========================*/
+
+.hover-container {
+  position: relative;
+  display: block;
+}
+
+/* Title styling */
+.hover-container {
+  color: white;
+}
+
+/* Hover list */
+.hover-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(70%, 0);
+  background: #211f1f;
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  list-style: none;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+
+  min-width: 180px;
+  max-width: clamp(200px, 50vw, 350px);
+  white-space: normal;
+  z-index: 10;
+}
+
+/* Show hover list on hover */
+.hover-container:hover .hover-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(60%, 0);
+}
+
+/* Flip to left on small screens */
+@media (max-width: 768px) {
+  .hover-list {
+    left: auto;
+    right: 0;
+    transform: translate(0, 0);
+    max-width: 90vw;
+  }
+
+  .hover-container:hover .hover-list {
+    transform: translate(0, 0);
+  }
+}
+
+/* List items */
+.hover-list li {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f5f5f5;
+  word-break: break-word;
+  gap: 8px;
+}
+
+/* Accent hover effect */
+.hover-list li:hover {
+  color: #611e1e;
+  padding-left: 6px;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.hover-list li:not(:has(img)) {
+  display: block;
+  padding-left: 32px;
+}
+
+/* Logo icon next to text */
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+ul.space-y-1 li {
+  list-style: none;
 }

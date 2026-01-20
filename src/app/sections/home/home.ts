@@ -52,7 +52,7 @@ export class Home implements AfterViewInit {
   // Scroll listener
   @HostListener('window:scroll', [])
   onScroll() {
-    this.isScrolled = window.scrollY > 50; // Shrink header if scrolled
+    this.isScrolled = window.scrollY > 50;
     this.updateActiveSection();
   }
 

@@ -17,10 +17,10 @@ export class Contacts implements AfterViewInit {
         ([entry]) => {
           if (entry.isIntersecting) {
             section.classList.add('show-line');
-            observer.unobserve(section); // animate only once
+            observer.unobserve(section);
           }
         },
-        { threshold: 0.3 } // trigger when 30% visible
+        { threshold: 0.3 },
       );
 
       observer.observe(section);
