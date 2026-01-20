@@ -8,11 +8,12 @@ import {
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Modal } from '../../shared/modal/modal';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, Modal],
   templateUrl: './home.html',
   styleUrls: ['./home.css'],
 })
@@ -22,6 +23,15 @@ export class Home implements AfterViewInit {
   underlineWidth: number = 0;
   isScrolled = false;
   isMenuOpen = false;
+  isModalOpen = false;
+
+  openModal() {
+    this.isModalOpen = true;
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
+  }
 
   sections = ['home', 'about', 'projects', 'contacts'];
 
