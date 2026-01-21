@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1768907435676,
+  "timestamp": 1768931960689,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,9 +13,9 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-XU54I5RY.js",
+        "/main-2B5KA4RG.js",
         "/manifest.webmanifest",
-        "/styles-DJRJREN5.css"
+        "/styles-HMM3HETB.css"
       ],
       "patterns": []
     },
@@ -36,14 +36,20 @@
         "/assets/icons/design.png",
         "/assets/icons/email.png",
         "/assets/icons/github.png",
+        "/assets/icons/gus-logo.png",
         "/assets/icons/hosting.png",
+        "/assets/icons/itorho-logo-only-2.png",
+        "/assets/icons/js-mastery.png",
+        "/assets/icons/location-icon.png",
         "/assets/icons/node.png",
         "/assets/icons/phone-png-3.png",
         "/assets/icons/pnet-logo-01.png",
         "/assets/icons/react.webp",
+        "/assets/icons/small-linkedIn.png",
         "/assets/icons/typescript.png",
         "/assets/icons/web_develop.png",
         "/assets/icons/whatsapp.png",
+        "/assets/icons/zaio.png",
         "/assets/images/my_image.jpg",
         "/icons/icon-128x128.png",
         "/icons/icon-144x144.png",
@@ -68,14 +74,20 @@
     "/assets/icons/design.png": "fc55eaabf7e41143ae677ea6ac30008b0fe65544",
     "/assets/icons/email.png": "13fb6cba6cd21e0296ece00f971e58e2fefb6f46",
     "/assets/icons/github.png": "33651b47fc3875c1394b1f5f6b894749a0bc1f7e",
+    "/assets/icons/gus-logo.png": "b4e74f926df3b0f947cce706f02398dba5a8c319",
     "/assets/icons/hosting.png": "fe3840a004c3ec3b37f5209beeeb56a13e8bda68",
+    "/assets/icons/itorho-logo-only-2.png": "ad356bd6365d5965ff7ef8505864376b62f73fd0",
+    "/assets/icons/js-mastery.png": "c4491a18d35b3da9ac95708eadc873c5bd236e06",
+    "/assets/icons/location-icon.png": "9491d339c16c6a3280f2ec74456532ed8cfc4edd",
     "/assets/icons/node.png": "333d2a4f42a7653323bbf3f322976fa598c540af",
     "/assets/icons/phone-png-3.png": "c60daba7b7ca7257b9035dd9e91b2fbcb176c3e9",
     "/assets/icons/pnet-logo-01.png": "8164d5be1bff7c060caf4bf1f87656ac708671ef",
     "/assets/icons/react.webp": "1ea210098b35c7ef06e6d073467ea17a7abdedde",
+    "/assets/icons/small-linkedIn.png": "0cdf9d14582788da0a1c101cdf7e42f5450f59a5",
     "/assets/icons/typescript.png": "1a432dd9d7d19a367fd2cb9446f6bc8962535b03",
     "/assets/icons/web_develop.png": "7d74a457e83bc4b9975b93d142e50110a54b9515",
     "/assets/icons/whatsapp.png": "1fe60c22866c1e13ace1520e9168e6c5056bff90",
+    "/assets/icons/zaio.png": "85f8704f24c550cb5e5e362aee894ff4a73e0bcf",
     "/assets/images/my_image.jpg": "4b56b7c5d6c09366becbd095368d72de7e42a6e8",
     "/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
     "/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
@@ -86,10 +98,10 @@
     "/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/index.html": "5cd837614fe199e5179e8f7cc5162851f77e6a00",
-    "/main-XU54I5RY.js": "c1b1a576a8d7ff4cbbee9421af7e72393f2871c2",
+    "/index.html": "f4acd203769a921c377dd728fa5d96a1372e8368",
+    "/main-2B5KA4RG.js": "e251981f0061cd94cb1b05e6f8a954ce3d28016b",
     "/manifest.webmanifest": "cf786f7abb174578af2b8de24e26fabba3da379f",
-    "/styles-DJRJREN5.css": "71cc8396a78ec201e0ee1b05c1750700bc049fbc"
+    "/styles-HMM3HETB.css": "6c0fecb54fd62956450f3fda6e50253ae89ea225"
   },
   "navigationUrls": [
     {
